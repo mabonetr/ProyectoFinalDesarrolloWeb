@@ -20,13 +20,13 @@ body .title {
 }
 
 @media screen and (max-width: 768px) {
-  body .title .title {
+  body .title {
     font-size: 30px;
   }
 }
 
 @media (max-width: 400px) {
-  body .title .title {
+  body .title {
     font-size: 20px;
   }
 }

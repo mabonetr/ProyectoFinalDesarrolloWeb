@@ -1,6 +1,5 @@
+@import "tipografia";
 
-$title_font_a: 'Permanent Marker', cursive;
-$title_font_b: 'Sarpanch', sans-serif;
 $subtitle_color: white;
 
 @mixin font {  
@@ -27,12 +26,12 @@ body {
         font-weight: bold;
         
         @media screen and (max-width: 768px) {
-            .title{
+            &{
                 font-size: 30px;
             }
         }  
         @media (max-width: 400px) {
-            .title{
+            &{
                 font-size: 20px;
                 }
          }
@@ -41,35 +40,37 @@ body {
         @include font;
         color: $subtitle_color ;
         font-size: 30px;
-    }
+   
         @media (max-width: 768px) {
-        .subtitle{
+        &{
             font-size: 15px;
             }
         }
         @media (max-width: 400px) {
 
-            .subtitle{
+            &{
                 font-size: 10px;
             }
+        }
         }
     .sectionSubtitles{
         @include font;
         color: $subtitle_color ;
         font-size: 20px;
-    }
+    
     @media (max-width: 768px) {
 
-        .sectionSubtitles{
+        &{
             font-size: 20px;
         }      
     }
     @media (max-width: 400px) {
 
-        .sectionSubtitles{
+        &{
             font-size: 15px;
         }
         
+    }
     }
     .descriptionText{
         @include font;
@@ -78,26 +79,28 @@ body {
         font-size: 20px;
     
     
-    }
+    
     @media (max-width: 768px) {
 
-        .descriptionText{
+        &{
             font-size: 15px;
     
         }
         
     }
+    }
     .relleno {
         height: 30vh;
         background-color: #2d50a3;
     
-    }
+   
     @media (max-width: 400px) {
 
-        .relleno {
+        & {
             height: 40vh;
         }
         
+    }
     }
     
     
