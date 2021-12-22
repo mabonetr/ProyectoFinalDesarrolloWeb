@@ -1,0 +1,105 @@
+
+$title_font_a: 'Permanent Marker', cursive;
+$title_font_b: 'Sarpanch', sans-serif;
+$subtitle_color: white;
+
+@mixin font {  
+    font-family: $title_font_a ;
+    font-family: $title_font_b ;
+}
+
+
+body {
+    background-color: #2d50a3;
+
+    .bg-image-first{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+    }
+    .title {
+        @include font;
+        font-size: 40px;
+        font-weight: bold;
+        
+        @media screen and (max-width: 768px) {
+            .title{
+                font-size: 30px;
+            }
+        }  
+        @media (max-width: 400px) {
+            .title{
+                font-size: 20px;
+                }
+         }
+        }
+    .subtitle{
+        @include font;
+        color: $subtitle_color ;
+        font-size: 30px;
+    }
+        @media (max-width: 768px) {
+        .subtitle{
+            font-size: 15px;
+            }
+        }
+        @media (max-width: 400px) {
+
+            .subtitle{
+                font-size: 10px;
+            }
+        }
+    .sectionSubtitles{
+        @include font;
+        color: $subtitle_color ;
+        font-size: 20px;
+    }
+    @media (max-width: 768px) {
+
+        .sectionSubtitles{
+            font-size: 20px;
+        }      
+    }
+    @media (max-width: 400px) {
+
+        .sectionSubtitles{
+            font-size: 15px;
+        }
+        
+    }
+    .descriptionText{
+        @include font;
+        text-align: justify;
+        color: $subtitle_color ;
+        font-size: 20px;
+    
+    
+    }
+    @media (max-width: 768px) {
+
+        .descriptionText{
+            font-size: 15px;
+    
+        }
+        
+    }
+    .relleno {
+        height: 30vh;
+        background-color: #2d50a3;
+    
+    }
+    @media (max-width: 400px) {
+
+        .relleno {
+            height: 40vh;
+        }
+        
+    }
+    
+    
+   
+}

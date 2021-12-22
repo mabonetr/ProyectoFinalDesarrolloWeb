@@ -1,0 +1,96 @@
+body {
+  background-color: #2d50a3;
+}
+
+body .bg-image-first {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
+}
+
+body .title {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  body .title .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .title .title {
+    font-size: 20px;
+  }
+}
+
+body .subtitle {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  body .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .subtitle {
+    font-size: 10px;
+  }
+}
+
+body .sectionSubtitles {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  body .sectionSubtitles {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  body .sectionSubtitles {
+    font-size: 15px;
+  }
+}
+
+body .descriptionText {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  body .descriptionText {
+    font-size: 15px;
+  }
+}
+
+body .relleno {
+  height: 30vh;
+  background-color: #2d50a3;
+}
+
+@media (max-width: 400px) {
+  body .relleno {
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=card.css.map */
