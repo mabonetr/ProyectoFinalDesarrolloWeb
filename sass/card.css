@@ -1,9 +1,10 @@
 body {
-  background-color: #2d50a3;
+  background-color: #2d50a3 !important;
+  /* Media Query */
 }
 
 body .bg-image-first {
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -15,8 +16,35 @@ body .bg-image-first {
 body .title {
   font-family: "Permanent Marker", cursive;
   font-family: "Sarpanch", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+}
+
+body .subtitle {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  color: white !important;
+  font-size: 30px;
+}
+
+body .sectionSubtitles {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  color: #d9d9d9 !important;
+  font-size: 30px;
+}
+
+body .descriptionText {
+  font-family: "Permanent Marker", cursive;
+  font-family: "Sarpanch", sans-serif;
+  text-align: justify;
+  color: #3c6e71 !important;
+  font-size: 20px;
+}
+
+body .relleno {
+  height: 30vh;
+  background-color: #2d50a3 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,13 +59,6 @@ body .title {
   }
 }
 
-body .subtitle {
-  font-family: "Permanent Marker", cursive;
-  font-family: "Sarpanch", sans-serif;
-  color: white;
-  font-size: 30px;
-}
-
 @media (max-width: 768px) {
   body .subtitle {
     font-size: 15px;
@@ -48,13 +69,6 @@ body .subtitle {
   body .subtitle {
     font-size: 10px;
   }
-}
-
-body .sectionSubtitles {
-  font-family: "Permanent Marker", cursive;
-  font-family: "Sarpanch", sans-serif;
-  color: white;
-  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -69,23 +83,10 @@ body .sectionSubtitles {
   }
 }
 
-body .descriptionText {
-  font-family: "Permanent Marker", cursive;
-  font-family: "Sarpanch", sans-serif;
-  text-align: justify;
-  color: white;
-  font-size: 20px;
-}
-
 @media (max-width: 768px) {
   body .descriptionText {
     font-size: 15px;
   }
-}
-
-body .relleno {
-  height: 30vh;
-  background-color: #2d50a3;
 }
 
 @media (max-width: 400px) {

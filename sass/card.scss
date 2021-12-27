@@ -1,6 +1,7 @@
 @import "tipografia";
+@import "paleta";
 
-$subtitle_color: white;
+
 
 @mixin font {  
     font-family: $title_font_a ;
@@ -9,10 +10,10 @@ $subtitle_color: white;
 
 
 body {
-    background-color: #2d50a3;
+    background-color: map-get($map: $paleta, $key: "fondo" )!important;
 
     .bg-image-first{
-        background-position: center;
+        /* background-position: center; */
         background-repeat: no-repeat;
         background-size: cover;
         -webkit-background-size: cover;
@@ -22,41 +23,59 @@ body {
     }
     .title {
         @include font;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
-        
-        @media screen and (max-width: 768px) {
-            &{
-                font-size: 30px;
+        }
+    .subtitle{
+        @include font;
+        color: map-get($map: $paleta, $key: "subtitulos") !important ;
+        font-size: 30px;
+
+        }
+    .sectionSubtitles{
+        @include font;
+        color: map-get($map: $paleta, $key: "terciario")!important ;
+        font-size: 30px;
+    }
+    .descriptionText{
+        @include font;
+        text-align: justify;
+        color: map-get($map: $paleta, $key: "secundario")!important ;
+        font-size: 20px;
+    }
+    .relleno {
+        height: 30vh;
+        background-color: map-get($map: $paleta, $key: "fondo")!important;
+    
+    }
+    /* Media Query */
+    .title {
+    @media screen and (max-width: 768px) {
+        &{
+            font-size: 30px;
             }
         }  
-        @media (max-width: 400px) {
-            &{
-                font-size: 20px;
+    @media (max-width: 400px) {
+        &{
+            font-size: 20px;
                 }
          }
         }
     .subtitle{
-        @include font;
-        color: $subtitle_color ;
-        font-size: 30px;
    
-        @media (max-width: 768px) {
+    @media (max-width: 768px) {
         &{
             font-size: 15px;
             }
         }
-        @media (max-width: 400px) {
+    @media (max-width: 400px) {
 
-            &{
-                font-size: 10px;
+        &{
+            font-size: 10px;
             }
         }
         }
     .sectionSubtitles{
-        @include font;
-        color: $subtitle_color ;
-        font-size: 20px;
     
     @media (max-width: 768px) {
 
@@ -73,13 +92,7 @@ body {
     }
     }
     .descriptionText{
-        @include font;
-        text-align: justify;
-        color: $subtitle_color ;
-        font-size: 20px;
-    
-    
-    
+
     @media (max-width: 768px) {
 
         &{
@@ -90,9 +103,6 @@ body {
     }
     }
     .relleno {
-        height: 30vh;
-        background-color: #2d50a3;
-    
    
     @media (max-width: 400px) {
 
