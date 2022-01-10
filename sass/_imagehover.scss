@@ -1,0 +1,22 @@
+.zoomConteiner{
+    position: relative;
+    width: 100%;
+}
+.zoomImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); 
+  }
