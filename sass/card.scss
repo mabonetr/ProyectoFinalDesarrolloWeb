@@ -23,23 +23,23 @@ body {
     }
     .title {
         @include font;
-        font-size: 50px;
+        font-size: 60px;
         font-weight: bold;
         }
     .subtitle{
         @include font;
         color: map-get($map: $paleta, $key: "subtitulos") !important ;
-        font-size: 35px;
+        font-size: 40px;
         -webkit-text-stroke: 1px black;
 
         }
     .sectionSubtitles{
         @include font;
         color: map-get($map: $paleta, $key: "terciario")!important ;
-        font-size: 40px;
+        font-size: 35px;
     }
     .descriptionText{
-        @include font;
+        font-family: 'Open Sans', sans-serif;
         text-align: justify;
         color: map-get($map: $paleta, $key: "secundario")!important ;
         font-size: 20px;
